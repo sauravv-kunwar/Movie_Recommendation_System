@@ -1,101 +1,109 @@
-# Movie Recommendation System 🎬
-A smart movie recommendation system built with Streamlit that suggests similar movies based on user preferences.
+# 🎬 Movie Recommender System
 
-# ✨ Features
-AI-Powered Recommendations: Uses cosine similarity to find movies similar to your selection
+A content-based Movie Recommendation System built using **Machine Learning** and deployed with **Streamlit**.
 
-Beautiful UI: Dark aesthetic theme with gradient accents
+🔗 **Live Website:**
+👉 https://movie-recommender-system-2-k03x.onrender.com/
 
-Movie Posters: Fetches high-quality posters from TMDB API
+---
 
-Real-time Suggestions: Get instant recommendations with one click
+## 🚀 Features
 
-Movie Details: View ratings, release years, and descriptions
+* 🔎 Search for any movie
+* 🎥 Get top 5 similar movie recommendations
+* 🖼️ Movie posters displayed using TMDB API
+* ⚡ Fast and interactive UI built with Streamlit
+* 🌐 Deployed on Render
 
-# 🛠️ Technologies Used
-Python 3.9+
+---
 
-Streamlit - Web application framework
+## 🧠 How It Works
 
-Scikit-learn - Cosine similarity for recommendations
+This project uses **content-based filtering**:
 
-Pandas - Data manipulation
+1. Movie metadata (genres, keywords, cast, crew) is combined.
+2. Text vectorization is applied.
+3. Cosine similarity is calculated between movies.
+4. Top similar movies are recommended.
 
-Requests - API calls to TMDB
+---
 
-Pickle - Model serialization
+## 🛠️ Tech Stack
 
-# 📁 Project Structure
-text
-movie-recommender/
-├── app.py                    # Main Streamlit application
-├── model/
-│   ├── movie_list.pkl       # Movie dataset
-│   └── similarity.pkl       # Precomputed similarity matrix
-├── requirements.txt         # Python dependencies
-└── README.md               # This file
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **Streamlit**
+* **TMDB API**
+* **Render (Deployment)**
 
+---
 
-# 🚀 Quick Start
-Installation
-Clone the repository
+## 📂 Project Structure
 
-# bash
-git clone https://github.com/yourusername/movie-recommender.git
-cd movie-recommender
-Create virtual environment
+```
+├── app.py
+├── movies.pkl
+├── similarity.pkl
+├── requirements.txt
+├── runtime.txt
+└── README.md
+```
 
-# bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies
+---
 
-# bash
+## ⚙️ Installation (Run Locally)
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. Install dependencies:
+
+```bash
 pip install -r requirements.txt
-Run the application
+```
 
-# bash
+3. Run the app:
+
+```bash
 streamlit run app.py
-Open your browser at http://localhost:8501
+```
 
-# 📦 Requirements
-Create requirements.txt:
+---
 
-txt
-streamlit==1.28.0
-requests==2.31.0
-pandas==1.5.3
-scikit-learn==1.3.0
+## 🌍 Deployment
 
+This app is deployed using **Render**.
 
-# 🔧 How It Works
-Data Processing: The system uses a dataset of movies with features like genres, keywords, cast, and crew
+Start command used:
 
-Similarity Calculation: Cosine similarity is computed between movie vectors
+```bash
+streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+```
 
-Recommendation: When you select a movie, it finds the 5 most similar movies
+---
 
-Presentation: Displays recommendations with posters and details fetched from TMDB API
+## 📌 Future Improvements
 
-# 📊 Dataset
-The system uses a movie dataset containing:
+* Add user-based collaborative filtering
+* Add movie ratings
+* Add dark mode UI
+* Add movie trailer preview
+* Improve recommendation accuracy
 
-Movie titles and IDs
+---
 
-Genres and keywords
+## 👨‍💻 Author
 
-Cast and crew information
+**Saurav Kunwar**
+Computer Engineering Student
+Passionate about Machine Learning & AI 🚀
 
-User ratings and popularity scores
+---
 
-# 🌐 API Integration
-The application integrates with The Movie Database (TMDB) API to:
-
-Fetch movie posters
-
-Get updated movie details
-
-Retrieve ratings and release information
-
-
-
+⭐ If you like this project, give it a star on GitHub!

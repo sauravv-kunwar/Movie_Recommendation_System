@@ -88,21 +88,14 @@ streamlit run app.py --server.port $PORT --server.address 0.0.0.0
 
 ---
 
-## 📌 Future Improvements
 
-* Add user-based collaborative filtering
-* Add movie ratings
-* Add dark mode UI
-* Add movie trailer preview
-* Improve recommendation accuracy
-
----
 
 ## 👨‍💻 Author
 
 **Saurav Kunwar**
-Computer Engineering Student
-Passionate about Machine Learning & AI 🚀
+
+## Computer Engineering Student
+## Passionate about Machine Learning & AI 🚀
 
 ---
 

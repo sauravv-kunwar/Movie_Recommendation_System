@@ -94,8 +94,8 @@ streamlit run app.py --server.port $PORT --server.address 0.0.0.0
 
 **Saurav Kunwar**
 
-## Computer Engineering Student
-## Passionate about Machine Learning & AI 🚀
+- Computer Engineering Student
+-  Passionate about Machine Learning & AI 🚀
 
 ---
 

@@ -3,7 +3,7 @@
 A content-based Movie Recommendation System built using **Machine Learning** and deployed with **Streamlit**.
 
 🔗 **Live Website:**
-👉 https://movie-recommender-system-2-k03x.onrender.com/
+👉 https://movie-recommender-system-2-k03x.onrender.com
 
 ---
 
